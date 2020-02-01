@@ -1,0 +1,20 @@
+{
+  "name": "To-Do-Lina-Ebeid",
+  "version": "1.0.0",
+  "description": "The second week project",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G8/To-Do-Lina-Ebeid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G8/To-Do-Lina-Ebeid/issues"
+  },
+  "homepage": "https://github.com/GSG-G8/To-Do-Lina-Ebeid#readme"
+}
