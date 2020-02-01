@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>To-Do app</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>To-Do</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="todoForm" class="form">
+      <label for="name">Name</label><br />
+      <input type="text" id="name" /><br />
+      <label for="details">Details</label><br />
+      <input type="text" id="details" /> <br />
+      <label for="time">Date</label><br />
+      <input type="time" id="time" /><br />
+      <button id="add-todo" type="button">Add Task</button>
+    </form>
+    <section class="todoList">
+      <a id="add" href="#"><i class="fas fa-plus-circle"></i> </a>
+      <!-- <article class="todoList__art">
+            <h2>head</h2>
+            <p class="todoList__art--p">par</p>
+            <time class="todoList__art--p">1</time>
+            <button type="button"><i class="far fa-trash-alt"></i></button>
+            <button type="button">i class="far fa-edit"></button>
+        </article> -->
+    </section>
 
     <script src="main.js"></script>
-    
-</body>
+  </body>
 </html>
