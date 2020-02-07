@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/GSG-G8/To-Do-Lina-Ebeid/issues"
   },
-  "homepage": "https://github.com/GSG-G8/To-Do-Lina-Ebeid#readme"
+  "homepage": "https://github.com/GSG-G8/To-Do-Lina-Ebeid#readme",
+  "dependencies": {
+    "jest": "^25.1.0"
+  }
 }
