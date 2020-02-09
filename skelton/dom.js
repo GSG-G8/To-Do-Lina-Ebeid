@@ -1,8 +1,5 @@
 var addTodoForm = document.getElementById("add-todo");
 
-let add = document.getElementById("add");
-let close = document.getElementById("close");
-
 ////////////////////
 (function() {
   // This is the dom node where we will keep our todo
@@ -20,6 +17,7 @@ let close = document.getElementById("close");
     var todoNode = document.createElement("li");
     todoNode.setAttribute("class", "todo-task");
     tasks.appendChild(todoNode);
+    todoNode.id = `task${todo.id}`;
 
     // you will need to use addEventListener
 
@@ -40,17 +38,17 @@ let close = document.getElementById("close");
 
     // add markTodo button
     var markbtn = document.createElement("input");
-    markbtn.type= 'radio';
-    markbtn.id=`mark`
-    // markbtn.textContent = "Mark";
-    markbtn.addEventListener("click", function(event) {
-      markbtn.checked = true;
-      console.log("hi")
-      var newState = todoFunctions.markTodo(state, todo.id);
-      todoNode.style.background  = "red";
-      update(newState);
-    });
+    markbtn.type = "checkbox";
     todoNode.appendChild(markbtn);
+    markbtn.addEventListener("change", function() {
+      if (this.checked) {
+        let descc = document.getElementById(`task${todo.id}`);
+        console.log("hi");
+        descc.style.background = "red";
+        var newState = todoFunctions.markTodo(state, todo.id);
+        update(newState);
+      }
+    });
 
     // add classes for css
 
