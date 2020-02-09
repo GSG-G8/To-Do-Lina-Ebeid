@@ -1,17 +1,19 @@
-html {
+body {
   background: linear-gradient(#c68ccee8, #95a5c9d3);
-  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 100%; */
   padding: 0;
   margin: 0;
 }
-
 .container {
   background-color: whitesmoke;
-  width: 350px;
+  width: 320px;
   height: 500px;
   margin: 5% auto;
   border-radius: 20px;
   text-align: center;
+  z-index: 5;
 }
 .add__input {
   margin: 15% auto;
@@ -37,3 +39,10 @@ html {
 .todo-task__details {
   margin-right: 10%;
 }
+@media (max-width:500px){
+  .container {
+    
+    width: 80%;
+    height: 500px;
+  
+}}
